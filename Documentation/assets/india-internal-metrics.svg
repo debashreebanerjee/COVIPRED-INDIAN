@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">India internal model metrics</title>
+  <desc id="desc">Grouped bar chart showing test accuracy for four models on the India original and SMOTE datasets.</desc>
+  <style>
+    .bg { fill: #fbfcfe; }
+    .axis { stroke: #475569; stroke-width: 1.2; }
+    .grid { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 4 4; }
+    .label { fill: #0f172a; font: 14px Arial, sans-serif; }
+    .small { fill: #475569; font: 12px Arial, sans-serif; }
+    .title { fill: #0f172a; font: 22px Arial, sans-serif; font-weight: bold; }
+    .subtitle { fill: #334155; font: 13px Arial, sans-serif; }
+    .bar1 { fill: #1d4ed8; }
+    .bar2 { fill: #0f766e; }
+    .value { fill: #0f172a; font: 12px Arial, sans-serif; font-weight: bold; }
+    .legend1 { fill: #1d4ed8; }
+    .legend2 { fill: #0f766e; }
+  </style>
+  <rect class="bg" x="0" y="0" width="960" height="420"/>
+  <text class="title" x="40" y="42">India internal evaluation</text>
+  <text class="subtitle" x="40" y="64">Test accuracy across the four models trained in India.ipynb</text>
+
+  <rect class="legend1" x="720" y="28" width="14" height="14"/>
+  <text class="small" x="742" y="40">Original 375</text>
+  <rect class="legend2" x="840" y="28" width="14" height="14"/>
+  <text class="small" x="862" y="40">SMOTE 600</text>
+
+  <line class="axis" x1="90" y1="330" x2="910" y2="330"/>
+  <line class="axis" x1="90" y1="90" x2="90" y2="330"/>
+
+  <line class="grid" x1="90" y1="330" x2="910" y2="330"/>
+  <line class="grid" x1="90" y1="282" x2="910" y2="282"/>
+  <line class="grid" x1="90" y1="234" x2="910" y2="234"/>
+  <line class="grid" x1="90" y1="186" x2="910" y2="186"/>
+  <line class="grid" x1="90" y1="138" x2="910" y2="138"/>
+  <line class="grid" x1="90" y1="90" x2="910" y2="90"/>
+
+  <text class="small" x="58" y="334">0.00</text>
+  <text class="small" x="58" y="286">0.20</text>
+  <text class="small" x="58" y="238">0.40</text>
+  <text class="small" x="58" y="190">0.60</text>
+  <text class="small" x="58" y="142">0.80</text>
+  <text class="small" x="58" y="94">1.00</text>
+
+  <rect class="bar1" x="150" y="96.4" width="34" height="233.6"/>
+  <rect class="bar2" x="190" y="94.0" width="34" height="236.0"/>
+  <text class="value" x="151" y="88">0.973</text>
+  <text class="value" x="191" y="86">0.983</text>
+  <text class="label" x="145" y="356">XGBoost</text>
+
+  <rect class="bar1" x="340" y="96.4" width="34" height="233.6"/>
+  <rect class="bar2" x="380" y="94.0" width="34" height="236.0"/>
+  <text class="value" x="341" y="88">0.973</text>
+  <text class="value" x="381" y="86">0.983</text>
+  <text class="label" x="342" y="356">AdaBoost</text>
+
+  <rect class="bar1" x="530" y="96.4" width="34" height="233.6"/>
+  <rect class="bar2" x="570" y="96.0" width="34" height="234.0"/>
+  <text class="value" x="531" y="88">0.973</text>
+  <text class="value" x="571" y="88">0.975</text>
+  <text class="label" x="509" y="356">RandomForest</text>
+
+  <rect class="bar1" x="720" y="106.0" width="34" height="224.0"/>
+  <rect class="bar2" x="760" y="102.0" width="34" height="228.0"/>
+  <text class="value" x="721" y="98">0.933</text>
+  <text class="value" x="761" y="94">0.950</text>
+  <text class="label" x="708" y="356">DecisionTree</text>
+
+  <text class="small" x="40" y="392">Best internal performance: XGBoost on SMOTE 600 with 0.983 test accuracy.</text>
+</svg>

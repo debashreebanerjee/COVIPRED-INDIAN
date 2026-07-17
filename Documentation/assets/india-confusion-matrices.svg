@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="title desc">
+  <title id="title">India confusion matrices</title>
+  <desc id="desc">Two confusion matrices for the best India internal XGBoost models on the original and SMOTE datasets.</desc>
+  <style>
+    .bg { fill: #fbfcfe; }
+    .title { fill: #0f172a; font: 22px Arial, sans-serif; font-weight: bold; }
+    .subtitle { fill: #334155; font: 13px Arial, sans-serif; }
+    .label { fill: #0f172a; font: 14px Arial, sans-serif; }
+    .small { fill: #475569; font: 12px Arial, sans-serif; }
+    .countDark { fill: #ffffff; font: 22px Arial, sans-serif; font-weight: bold; }
+    .countLight { fill: #0f172a; font: 22px Arial, sans-serif; font-weight: bold; }
+    .cell1 { fill: #0f766e; }
+    .cell2 { fill: #bae6fd; }
+    .cell3 { fill: #93c5fd; }
+    .cell4 { fill: #1d4ed8; }
+    .outline { stroke: #cbd5e1; stroke-width: 2; fill: none; }
+  </style>
+  <rect class="bg" x="0" y="0" width="960" height="440"/>
+  <text class="title" x="40" y="42">India internal confusion matrices</text>
+  <text class="subtitle" x="40" y="64">Best XGBoost models from India.ipynb</text>
+
+  <text class="label" x="180" y="104">Original dataset (375)</text>
+  <text class="small" x="165" y="128">Predicted Negative</text>
+  <text class="small" x="300" y="128">Predicted Positive</text>
+  <text class="small" x="70" y="220" transform="rotate(-90 70,220)">Actual Negative / Positive</text>
+  <rect class="cell1" x="150" y="150" width="120" height="120"/>
+  <rect class="cell2" x="270" y="150" width="120" height="120"/>
+  <rect class="cell3" x="150" y="270" width="120" height="120"/>
+  <rect class="cell4" x="270" y="270" width="120" height="120"/>
+  <rect class="outline" x="150" y="150" width="240" height="240"/>
+  <text class="small" x="120" y="220">Neg</text>
+  <text class="small" x="120" y="340">Pos</text>
+  <text class="countDark" x="196" y="220">59</text>
+  <text class="countLight" x="318" y="220">1</text>
+  <text class="countLight" x="198" y="340">1</text>
+  <text class="countDark" x="310" y="340">14</text>
+  <text class="small" x="150" y="410">Accuracy 0.973, sensitivity 0.933, specificity 0.983</text>
+
+  <text class="label" x="610" y="104">SMOTE dataset (600)</text>
+  <text class="small" x="595" y="128">Predicted Negative</text>
+  <text class="small" x="730" y="128">Predicted Positive</text>
+  <text class="small" x="500" y="220" transform="rotate(-90 500,220)">Actual Negative / Positive</text>
+  <rect class="cell1" x="580" y="150" width="120" height="120"/>
+  <rect class="cell2" x="700" y="150" width="120" height="120"/>
+  <rect class="cell3" x="580" y="270" width="120" height="120"/>
+  <rect class="cell4" x="700" y="270" width="120" height="120"/>
+  <rect class="outline" x="580" y="150" width="240" height="240"/>
+  <text class="small" x="550" y="220">Neg</text>
+  <text class="small" x="550" y="340">Pos</text>
+  <text class="countDark" x="626" y="220">59</text>
+  <text class="countLight" x="748" y="220">1</text>
+  <text class="countLight" x="628" y="340">1</text>
+  <text class="countDark" x="740" y="340">59</text>
+  <text class="small" x="580" y="410">Accuracy 0.983, sensitivity 0.983, specificity 0.983</text>
+</svg>

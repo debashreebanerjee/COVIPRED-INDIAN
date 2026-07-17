@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="980" viewBox="0 0 1200 980" role="img" aria-labelledby="title desc">
+  <title id="title">Cross-dataset confusion matrices</title>
+  <desc id="desc">Six confusion matrices for Brazil and Italy models evaluated on external cohorts.</desc>
+  <style>
+    .bg { fill: #fbfcfe; }
+    .title { fill: #0f172a; font: 22px Arial, sans-serif; font-weight: bold; }
+    .subtitle { fill: #334155; font: 13px Arial, sans-serif; }
+    .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 12; ry: 12; }
+    .label { fill: #0f172a; font: 16px Arial, sans-serif; font-weight: bold; }
+    .small { fill: #475569; font: 12px Arial, sans-serif; }
+    .countDark { fill: #ffffff; font: 18px Arial, sans-serif; font-weight: bold; }
+    .countLight { fill: #0f172a; font: 18px Arial, sans-serif; font-weight: bold; }
+    .c1 { fill: #0f766e; }
+    .c2 { fill: #bae6fd; }
+    .c3 { fill: #93c5fd; }
+    .c4 { fill: #1d4ed8; }
+    .outline { stroke: #cbd5e1; stroke-width: 1.5; fill: none; }
+  </style>
+  <rect class="bg" x="0" y="0" width="1200" height="980"/>
+  <text class="title" x="40" y="42">Cross-dataset confusion matrices</text>
+  <text class="subtitle" x="40" y="64">Default 0.5 threshold reconstructed from saved prediction files</text>
+
+  <rect class="panel" x="40" y="100" width="340" height="250"/>
+  <text class="label" x="60" y="128">Brazil on India 375</text>
+  <text class="small" x="134" y="150">Pred Neg</text>
+  <text class="small" x="237" y="150">Pred Pos</text>
+  <text class="small" x="70" y="235" transform="rotate(-90 70,235)">Actual</text>
+  <rect class="c1" x="120" y="170" width="90" height="70"/><rect class="c2" x="210" y="170" width="90" height="70"/>
+  <rect class="c3" x="120" y="240" width="90" height="70"/><rect class="c4" x="210" y="240" width="90" height="70"/>
+  <rect class="outline" x="120" y="170" width="180" height="140"/>
+  <text class="small" x="95" y="212">Neg</text><text class="small" x="95" y="282">Pos</text>
+  <text class="countDark" x="151" y="212">254</text><text class="countLight" x="247" y="212">46</text>
+  <text class="countLight" x="157" y="282">64</text><text class="countDark" x="247" y="282">11</text>
+  <text class="small" x="60" y="330">Acc 0.707 | Bal Acc 0.497</text>
+
+  <rect class="panel" x="430" y="100" width="340" height="250"/>
+  <text class="label" x="450" y="128">Brazil on India 600</text>
+  <text class="small" x="524" y="150">Pred Neg</text>
+  <text class="small" x="627" y="150">Pred Pos</text>
+  <text class="small" x="460" y="235" transform="rotate(-90 460,235)">Actual</text>
+  <rect class="c1" x="510" y="170" width="90" height="70"/><rect class="c2" x="600" y="170" width="90" height="70"/>
+  <rect class="c3" x="510" y="240" width="90" height="70"/><rect class="c4" x="600" y="240" width="90" height="70"/>
+  <rect class="outline" x="510" y="170" width="180" height="140"/>
+  <text class="small" x="485" y="212">Neg</text><text class="small" x="485" y="282">Pos</text>
+  <text class="countDark" x="541" y="212">258</text><text class="countLight" x="637" y="212">42</text>
+  <text class="countLight" x="542" y="282">247</text><text class="countDark" x="637" y="282">53</text>
+  <text class="small" x="450" y="330">Acc 0.518 | Bal Acc 0.518</text>
+
+  <rect class="panel" x="820" y="100" width="340" height="250"/>
+  <text class="label" x="840" y="128">Brazil on Italy</text>
+  <text class="small" x="914" y="150">Pred Neg</text>
+  <text class="small" x="1017" y="150">Pred Pos</text>
+  <text class="small" x="850" y="235" transform="rotate(-90 850,235)">Actual</text>
+  <rect class="c1" x="900" y="170" width="90" height="70"/><rect class="c2" x="990" y="170" width="90" height="70"/>
+  <rect class="c3" x="900" y="240" width="90" height="70"/><rect class="c4" x="990" y="240" width="90" height="70"/>
+  <rect class="outline" x="900" y="170" width="180" height="140"/>
+  <text class="small" x="875" y="212">Neg</text><text class="small" x="875" y="282">Pos</text>
+  <text class="countDark" x="934" y="212">537</text><text class="countLight" x="1028" y="212">86</text>
+  <text class="countLight" x="935" y="282">443</text><text class="countDark" x="1018" y="282">322</text>
+  <text class="small" x="840" y="330">Acc 0.619 | Bal Acc 0.641</text>
+
+  <rect class="panel" x="40" y="400" width="340" height="250"/>
+  <text class="label" x="60" y="428">Italy on India 375</text>
+  <text class="small" x="134" y="450">Pred Neg</text>
+  <text class="small" x="237" y="450">Pred Pos</text>
+  <text class="small" x="70" y="535" transform="rotate(-90 70,535)">Actual</text>
+  <rect class="c1" x="120" y="470" width="90" height="70"/><rect class="c2" x="210" y="470" width="90" height="70"/>
+  <rect class="c3" x="120" y="540" width="90" height="70"/><rect class="c4" x="210" y="540" width="90" height="70"/>
+  <rect class="outline" x="120" y="470" width="180" height="140"/>
+  <text class="small" x="95" y="512">Neg</text><text class="small" x="95" y="582">Pos</text>
+  <text class="countDark" x="157" y="512">154</text><text class="countLight" x="247" y="512">146</text>
+  <text class="countLight" x="157" y="582">42</text><text class="countDark" x="247" y="582">33</text>
+  <text class="small" x="60" y="630">Acc 0.499 | Bal Acc 0.477</text>
+
+  <rect class="panel" x="430" y="400" width="340" height="250"/>
+  <text class="label" x="450" y="428">Italy on India 600</text>
+  <text class="small" x="524" y="450">Pred Neg</text>
+  <text class="small" x="627" y="450">Pred Pos</text>
+  <text class="small" x="460" y="535" transform="rotate(-90 460,535)">Actual</text>
+  <rect class="c1" x="510" y="470" width="90" height="70"/><rect class="c2" x="600" y="470" width="90" height="70"/>
+  <rect class="c3" x="510" y="540" width="90" height="70"/><rect class="c4" x="600" y="540" width="90" height="70"/>
+  <rect class="outline" x="510" y="470" width="180" height="140"/>
+  <text class="small" x="485" y="512">Neg</text><text class="small" x="485" y="582">Pos</text>
+  <text class="countDark" x="547" y="512">171</text><text class="countLight" x="637" y="512">129</text>
+  <text class="countLight" x="547" y="582">145</text><text class="countDark" x="637" y="582">155</text>
+  <text class="small" x="450" y="630">Acc 0.543 | Bal Acc 0.543</text>
+
+  <rect class="panel" x="820" y="400" width="340" height="250"/>
+  <text class="label" x="840" y="428">Italy on Brazil</text>
+  <text class="small" x="914" y="450">Pred Neg</text>
+  <text class="small" x="1017" y="450">Pred Pos</text>
+  <text class="small" x="850" y="535" transform="rotate(-90 850,535)">Actual</text>
+  <rect class="c1" x="900" y="470" width="90" height="70"/><rect class="c2" x="990" y="470" width="90" height="70"/>
+  <rect class="c3" x="900" y="540" width="90" height="70"/><rect class="c4" x="990" y="540" width="90" height="70"/>
+  <rect class="outline" x="900" y="470" width="180" height="140"/>
+  <text class="small" x="875" y="512">Neg</text><text class="small" x="875" y="582">Pos</text>
+  <text class="countDark" x="922" y="512">5446</text><text class="countLight" x="1007" y="512">3325</text>
+  <text class="countLight" x="936" y="582">858</text><text class="countDark" x="1015" y="582">2287</text>
+  <text class="small" x="840" y="630">Acc 0.649 | Bal Acc 0.674</text>
+</svg>
