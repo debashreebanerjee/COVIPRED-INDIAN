@@ -87,7 +87,7 @@ For each setting, the notebook reports:
 - Brier score
 
 ### Metric Implementation Notes
-- The notebook's `F2 Score` column is computed with `fbeta_score(beta=0.5)`.
+- The notebook's `F2 Score` column is computed with `fbeta_score(beta=2)`.
 - The summary-table ROC AUC values are computed from hard class predictions, matching the notebook code.
 - Brier score is computed from predicted probabilities.
 - The helper `computemetrics()` function also prints threshold-specific values at `0.15` and `0.5`.
