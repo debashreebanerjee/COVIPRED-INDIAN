@@ -33,13 +33,13 @@ This document records the results produced by `Codes/Brazil.ipynb`. The notebook
 
 | Evaluation Set | Samples | Accuracy | Sensitivity | Specificity | Balanced Accuracy | `F2 Score`* | ROC AUC** | Brier Score |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brazil on India 375 | 375 | 0.7067 | 0.1467 | 0.8467 | 0.4967 | 0.1541 | 0.4967 | 0.2050 |
-| Brazil on India SMOTE 600 | 600 | 0.5183 | 0.1767 | 0.8600 | 0.5183 | 0.2046 | 0.5183 | 0.3498 |
-| Brazil on Italy | 1,388 | 0.6189 | 0.4209 | 0.8620 | 0.6414 | 0.4642 | 0.6414 | 0.2605 |
+| Brazil on India 375 | 375 | 0.7067 | 0.1467 | 0.8467 | 0.4967 | 0.1541 | 0.5471 | 0.2050 |
+| Brazil on India SMOTE 600 | 600 | 0.5183 | 0.1767 | 0.8600 | 0.5183 | 0.2046 | 0.5900 | 0.3498 |
+| Brazil on Italy | 1,388 | 0.6189 | 0.4209 | 0.8620 | 0.6414 | 0.4642 | 0.7458 | 0.2605 |
 
 \* `F2 Score` is computed with `fbeta_score(beta=2)`.
 
-\** The notebook summary uses hard predictions for ROC AUC.
+\** ROC AUC is computed from predicted probabilities using `predict_proba`.
 
 ---
 

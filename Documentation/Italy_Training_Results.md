@@ -33,13 +33,13 @@ This document records the results produced by `Codes/Italy.ipynb`. The notebook 
 
 | Evaluation Set | Samples | Accuracy | Sensitivity | Specificity | Balanced Accuracy | `F2 Score`* | ROC AUC** | Brier Score |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Italy on India 375 | 375 | 0.4987 | 0.4400 | 0.5133 | 0.4767 | 0.3445 | 0.4767 | 0.3637 |
-| Italy on India 600 | 600 | 0.5433 | 0.5167 | 0.5700 | 0.5433 | 0.5222 | 0.5433 | 0.3345 |
-| Italy on Brazil | 11,916 | 0.6490 | 0.7272 | 0.6209 | 0.6740 | 0.6286 | 0.6740 | 0.2747 |
+| Italy on India 375 | 375 | 0.4987 | 0.4400 | 0.5133 | 0.4767 | 0.3445 | 0.5172 | 0.3637 |
+| Italy on India 600 | 600 | 0.5433 | 0.5167 | 0.5700 | 0.5433 | 0.5222 | 0.5787 | 0.3345 |
+| Italy on Brazil | 11,916 | 0.6490 | 0.7272 | 0.6209 | 0.6740 | 0.6286 | 0.7314 | 0.2747 |
 
 \* `F2 Score` is computed with `fbeta_score(beta=2)`.
 
-\** The notebook summary uses hard predictions for ROC AUC.
+\** ROC AUC is computed from predicted probabilities using `predict_proba`.
 
 ---
 
