@@ -113,4 +113,5 @@ Important generated files include:
 ## Notes
 
 - The README figures are lightweight SVG summaries derived from the saved notebook outputs and documented confusion matrices.
-- `Results/Italy_metrics.csv` contains stale ROC AUC and Brier Score values for the `Italy on Brazil` row; the markdown documentation in `Documentation/Italy_Training_Results.md` records the corrected values from the notebook output.
+- The cross-dataset summary CSVs now report ROC AUC from predicted probabilities (`predict_proba`) rather than hard class predictions.
+- The reported `F2 Score` values use `fbeta_score(beta=2)`.
