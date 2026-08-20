@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-labelledby="title desc">
+  <title id="title">Internal validation versus cross-dataset transfer</title>
+  <desc id="desc">ROC AUC for the Brazil-trained and Italy-trained models on their own held-out internal test set and on each external cohort, against a 0.50 chance reference.</desc>
+  <style>
+    .bg { fill: #fbfcfe; }
+    .title { fill: #0f172a; font: 22px Arial, sans-serif; font-weight: bold; }
+    .subtitle { fill: #334155; font: 13px Arial, sans-serif; }
+    .axis { stroke: #475569; stroke-width: 1.2; }
+    .grid { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 4 4; }
+    .chance { stroke: #64748b; stroke-width: 1.5; stroke-dasharray: 8 4; }
+    .chanceLabel { fill: #475569; font: 11px Arial, sans-serif; font-style: italic; }
+    .label { fill: #0f172a; font: 13px Arial, sans-serif; }
+    .small { fill: #475569; font: 12px Arial, sans-serif; }
+    .value { fill: #0f172a; font: 12px Arial, sans-serif; font-weight: bold; }
+    .divider { stroke: #94a3b8; stroke-width: 1; stroke-dasharray: 3 3; }
+
+    .groupLabel { fill: #0f172a; font: 14px Arial, sans-serif; font-weight: bold; }
+    .internalMark { fill: none; stroke: #0f172a; stroke-width: 2.5; }
+  </style>
+  <rect class="bg" x="0" y="0" width="1100" height="500"/>
+  <text class="title" x="40" y="42">Internal validation vs cross-dataset transfer</text>
+  <text class="subtitle" x="40" y="64">ROC AUC. The leftmost bar in each group is the model on its own held-out 20%.</text>
+
+  <rect fill="#1d4ed8" x="810" y="28" width="14" height="14" rx="3"/>
+  <text class="small" x="832" y="40">Brazil-trained model</text>
+  <rect fill="#dc2626" x="960" y="28" width="14" height="14" rx="3"/>
+  <text class="small" x="982" y="40">Italy-trained model</text>
+
+  <line class="axis" x1="90" y1="350" x2="1040" y2="350"/>
+  <line class="axis" x1="90" y1="100" x2="90" y2="350"/>
+
+  <line class="grid" x1="90" y1="350" x2="1040" y2="350"/>
+  <text class="small" x="78" y="354" text-anchor="end">0.00</text>
+  <line class="grid" x1="90" y1="300" x2="1040" y2="300"/>
+  <text class="small" x="78" y="304" text-anchor="end">0.20</text>
+  <line class="grid" x1="90" y1="250" x2="1040" y2="250"/>
+  <text class="small" x="78" y="254" text-anchor="end">0.40</text>
+  <line class="grid" x1="90" y1="200" x2="1040" y2="200"/>
+  <text class="small" x="78" y="204" text-anchor="end">0.60</text>
+  <line class="grid" x1="90" y1="150" x2="1040" y2="150"/>
+  <text class="small" x="78" y="154" text-anchor="end">0.80</text>
+  <line class="grid" x1="90" y1="100" x2="1040" y2="100"/>
+  <text class="small" x="78" y="104" text-anchor="end">1.00</text>
+
+  <rect fill="#1d4ed8" x="121" y="148.1" width="88" height="201.9" rx="4"/>
+  <rect class="internalMark" x="121" y="148.1" width="88" height="201.9" rx="4"/>
+  <text class="value" x="165" y="139.1" text-anchor="middle">0.808</text>
+  <text class="label" x="165" y="376" text-anchor="middle">Internal</text>
+  <text class="label" x="165" y="392" text-anchor="middle">(held-out 20%)</text>
+  <line class="divider" x1="219" y1="110" x2="219" y2="350"/>
+  <rect fill="#1d4ed8" x="229" y="151.7" width="88" height="198.3" rx="4"/>
+  <text class="value" x="273" y="142.7" text-anchor="middle">0.793</text>
+  <text class="label" x="273" y="376" text-anchor="middle">on Italy</text>
+  <rect fill="#1d4ed8" x="337" y="185.6" width="88" height="164.4" rx="4"/>
+  <text class="value" x="381" y="176.6" text-anchor="middle">0.658</text>
+  <text class="label" x="381" y="376" text-anchor="middle">on India 600</text>
+  <rect fill="#1d4ed8" x="445" y="201.9" width="88" height="148.1" rx="4"/>
+  <text class="value" x="489" y="192.9" text-anchor="middle">0.592</text>
+  <text class="label" x="489" y="376" text-anchor="middle">on India 375</text>
+  <text class="groupLabel" x="327" y="424" text-anchor="middle">Brazil-trained</text>
+
+  <rect fill="#dc2626" x="617" y="152.2" width="88" height="197.8" rx="4"/>
+  <rect class="internalMark" x="617" y="152.2" width="88" height="197.8" rx="4"/>
+  <text class="value" x="661" y="143.2" text-anchor="middle">0.791</text>
+  <text class="label" x="661" y="376" text-anchor="middle">Internal</text>
+  <text class="label" x="661" y="392" text-anchor="middle">(held-out 20%)</text>
+  <line class="divider" x1="715" y1="110" x2="715" y2="350"/>
+  <rect fill="#dc2626" x="725" y="164.9" width="88" height="185.1" rx="4"/>
+  <text class="value" x="769" y="155.9" text-anchor="middle">0.740</text>
+  <text class="label" x="769" y="376" text-anchor="middle">on Brazil</text>
+  <rect fill="#dc2626" x="833" y="214.3" width="88" height="135.7" rx="4"/>
+  <text class="value" x="877" y="205.3" text-anchor="middle">0.543</text>
+  <text class="label" x="877" y="376" text-anchor="middle">on India 600</text>
+  <rect fill="#dc2626" x="941" y="226.3" width="88" height="123.7" rx="4"/>
+  <text class="value" x="985" y="217.3" text-anchor="middle">0.495</text>
+  <text class="label" x="985" y="376" text-anchor="middle">on India 375</text>
+  <text class="groupLabel" x="823" y="424" text-anchor="middle">Italy-trained</text>
+
+  <line class="chance" x1="90" y1="225" x2="1040" y2="225"/>
+  <text class="chanceLabel" x="565" y="217" text-anchor="middle">chance 0.50</text>
+
+  <text class="small" x="40" y="466">Both models are internally valid and transfer to each other, but collapse to chance on both Indian cohorts.</text>
+</svg>
